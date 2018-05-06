@@ -8,4 +8,4 @@
 
 
 ## Snyk
-[![Known Vulnerabilities](https://snyk.io/test/github/kleberyarus1990/myproyecto/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/scrodrig/python_ci_setupkleberyarus1990/myproyecto?targetFile=requirements.txt)
+[![Known Vulnerabilities](https://snyk.io/test/github/kleberyarus1990/myproyecto/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/kleberyarus1990/myproyecto?targetFile=requirements.txt)
