@@ -98,5 +98,9 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+/data
+data/
 
+/Scenaries
+Scenaries/
 # End of https://www.gitignore.io/api/python
