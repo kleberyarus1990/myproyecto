@@ -56,11 +56,11 @@ data03.to_csv('../Scenaries/MPU4_KW/EXH_CYL_GAS_TEMP_AVE EXH_INL_GAS_TEMP_AVE VS
 data04=CreateScenary.stage4(dfx_train,history,'EXH_INL_GAS_TEMP_AVE','EXH_CYL_GAS_TEMP_AVE','WINDING_TEMP_AVE','MPU4_KW')
 data04.to_csv('../Scenaries/MPU4_KW/EXH_INL_GAS_TEMP_AVE EXH_CYL_GAS_TEMP_AVE WINDING_TEMP_AVE VS MPU4_KW.csv')
 
-
+#EXH_CYL_GAS_TEMP_AVE
 data01=CreateScenary.stage1(dfx_train,history,'EXH_CYL_GAS_TEMP_AVE')
 data01.to_csv('../Scenaries/EXH_CYL_GAS_TEMP_AVE/EXH_CYL_GAS_TEMP_AVE.csv')
 
-# Concentration and one variable
+
 data02=CreateScenary.stage2(dfx_train,history,'MPU4_KW','EXH_CYL_GAS_TEMP_AVE')
 data02.to_csv('../Scenaries/EXH_CYL_GAS_TEMP_AVE/MPU4_KW VS EXH_CYL_GAS_TEMP_AVE.csv')
 
@@ -70,26 +70,23 @@ data02.to_csv('../Scenaries/EXH_CYL_GAS_TEMP_AVE/WINDING_TEMP_AVE VS EXH_CYL_GAS
 data02=CreateScenary.stage2(dfx_train,history,'EXH_INL_GAS_TEMP_AVE','EXH_CYL_GAS_TEMP_AVE')
 data02.to_csv('../Scenaries/EXH_CYL_GAS_TEMP_AVE/EXH_INL_GAS_TEMP_AVE VS EXH_CYL_GAS_TEMP_AVE.csv')
 
-
-#Concentration and two variables
-data03=CreateScenary.stage3(dfx_train,history,'EXH_CYL_GAS_TEMP_AVE','WINDING_TEMP_AVE','EXH_CYL_GAS_TEMP_AVE')
+data03=CreateScenary.stage3(dfx_train,history,'EXH_INL_GAS_TEMP_AVE','WINDING_TEMP_AVE','EXH_CYL_GAS_TEMP_AVE')
 data03.to_csv('../Scenaries/EXH_CYL_GAS_TEMP_AVE/EXH_CYL_GAS_TEMP_AVE WINDING_TEMP_AVE VS EXH_CYL_GAS_TEMP_AVE.csv')
 
 data03=CreateScenary.stage3(dfx_train,history,'MPU4_KW','EXH_INL_GAS_TEMP_AVE','EXH_CYL_GAS_TEMP_AVE')
 data03.to_csv('../Scenaries/EXH_CYL_GAS_TEMP_AVE/MPU4_KW EXH_INL_GAS_TEMP_AVE VS EXH_CYL_GAS_TEMP_AVE.csv')
 
-#Concentration and three varaibles
 data04=CreateScenary.stage4(dfx_train,history,'EXH_INL_GAS_TEMP_AVE','MPU4_KW','WINDING_TEMP_AVE','EXH_CYL_GAS_TEMP_AVE')
 data04.to_csv('../Scenaries/EXH_CYL_GAS_TEMP_AVE/EXH_INL_GAS_TEMP_AVE MPU4_KW WINDING_TEMP_AVE VS EXH_CYL_GAS_TEMP_AVE.csv')
 
 
 
-
+#WINDING_TEMP_AVE
 
 data01=CreateScenary.stage1(dfx_train,history,'WINDING_TEMP_AVE')
 data01.to_csv('../Scenaries/WINDING_TEMP_AVE/WINDING_TEMP_AVE.csv')
 
-# Concentration and one variable
+
 data02=CreateScenary.stage2(dfx_train,history,'MPU4_KW','WINDING_TEMP_AVE')
 data02.to_csv('../Scenaries/WINDING_TEMP_AVE/MPU4_KW VS WINDING_TEMP_AVE.csv')
 
@@ -100,14 +97,13 @@ data02=CreateScenary.stage2(dfx_train,history,'EXH_INL_GAS_TEMP_AVE','WINDING_TE
 data02.to_csv('../Scenaries/WINDING_TEMP_AVE/EXH_INL_GAS_TEMP_AVE VS WINDING_TEMP_AVE.csv')
 
 
-#Concentration and two variables
+
 data03=CreateScenary.stage3(dfx_train,history,'EXH_CYL_GAS_TEMP_AVE','MPU4_KW','WINDING_TEMP_AVE')
 data03.to_csv('../Scenaries/WINDING_TEMP_AVE/EXH_CYL_GAS_TEMP_AVE MPU4_KW VS WINDING_TEMP_AVE.csv')
 
 data03=CreateScenary.stage3(dfx_train,history,'EXH_CYL_GAS_TEMP_AVE','EXH_INL_GAS_TEMP_AVE','WINDING_TEMP_AVE')
 data03.to_csv('../Scenaries/WINDING_TEMP_AVE/EXH_CYL_GAS_TEMP_AVE EXH_INL_GAS_TEMP_AVE VS WINDING_TEMP_AVE.csv')
 
-#Concentration and three varaibles
 data04=CreateScenary.stage4(dfx_train,history,'EXH_INL_GAS_TEMP_AVE','MPU4_KW','EXH_CYL_GAS_TEMP_AVE','WINDING_TEMP_AVE')
 data04.to_csv('../Scenaries/WINDING_TEMP_AVE/EXH_INL_GAS_TEMP_AVE MPU4_KW EXH_CYL_GAS_TEMP_AVE VS WINDING_TEMP_AVE.csv')
 
@@ -115,7 +111,6 @@ data04.to_csv('../Scenaries/WINDING_TEMP_AVE/EXH_INL_GAS_TEMP_AVE MPU4_KW EXH_CY
 data01=CreateScenary.stage1(dfx_train,history,'EXH_INL_GAS_TEMP_AVE')
 data01.to_csv('../Scenaries/EXH_INL_GAS_TEMP_AVE/EXH_INL_GAS_TEMP_AVE.csv')
 
-# Concentration and one variable
 data02=CreateScenary.stage2(dfx_train,history,'MPU4_KW','EXH_INL_GAS_TEMP_AVE')
 data02.to_csv('../Scenaries/EXH_INL_GAS_TEMP_AVE/MPU4_KW VS EXH_INL_GAS_TEMP_AVE.csv')
 
@@ -126,14 +121,12 @@ data02=CreateScenary.stage2(dfx_train,history,'WINDING_TEMP_AVE','EXH_INL_GAS_TE
 data02.to_csv('../Scenaries/EXH_INL_GAS_TEMP_AVE/WINDING_TEMP_AVE VS EXH_INL_GAS_TEMP_AVE.csv')
 
 
-#Concentration and two variables
 data03=CreateScenary.stage3(dfx_train,history,'EXH_CYL_GAS_TEMP_AVE','MPU4_KW','EXH_INL_GAS_TEMP_AVE')
 data03.to_csv('../Scenaries/EXH_INL_GAS_TEMP_AVE/EXH_CYL_GAS_TEMP_AVE MPU4_KW VS EXH_INL_GAS_TEMP_AVE.csv')
 
 data03=CreateScenary.stage3(dfx_train,history,'EXH_CYL_GAS_TEMP_AVE','WINDING_TEMP_AVE','EXH_INL_GAS_TEMP_AVE')
 data03.to_csv('../Scenaries/EXH_INL_GAS_TEMP_AVE/EXH_CYL_GAS_TEMP_AVE WINDING_TEMP_AVE VS EXH_INL_GAS_TEMP_AVE.csv')
 
-#Concentration and three varaibles
 data04=CreateScenary.stage4(dfx_train,history,'WINDING_TEMP_AVE','MPU4_KW','EXH_CYL_GAS_TEMP_AVE','EXH_INL_GAS_TEMP_AVE')
 data04.to_csv('../Scenaries/EXH_INL_GAS_TEMP_AVE/WINDING_TEMP_AVE MPU4_KW EXH_CYL_GAS_TEMP_AVE VS EXH_INL_GAS_TEMP_AVE.csv')
 
