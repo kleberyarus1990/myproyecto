@@ -69,9 +69,10 @@ class CreateScenary():
 
         #head.append('a')
         stage = pd.DataFrame(index=data.index[hist:long], columns=head)
+
         #stage.set_axis(['a', 'b', 'c'], axis=1, inplace=True)
 
-        #print(stage.columns)
+
 
         for i in range(0, long - hist):
             aux = data.ix[data.index[i:i + hist], variable1].values
@@ -80,9 +81,7 @@ class CreateScenary():
             aux3 = np.transpose(aux2)
             stage.ix[stage.index[i]] = aux3
 
-        #stage.ix[stage.index[0:long - hist], 2 * hist] = data.ix[data.index[hist:long+1], variable2]
-        stage.ix[stage.index[0:long - hist], variable2] = data.ix[data.index[hist:long + 1], variable2]
-
+        stage.ix[stage.index[0:long - hist],variable2 ] = data.ix[data.index[hist:long+1], variable2]
 
 
 
@@ -136,7 +135,6 @@ class CreateScenary():
             aux4 = np.ravel(np.column_stack((aux,aux2,aux3)))
             aux5 = np.transpose(aux4)
             stage.ix[stage.index[i]] = aux5
-        #stage.ix[stage.index[0:long - hist], 3 * hist] = data.ix[data.index[hist:long], variable3]
         stage.ix[stage.index[0:long - hist], variable3] = data.ix[data.index[hist:long], variable3]
         return stage
 
@@ -176,8 +174,7 @@ class CreateScenary():
             aux5 = np.ravel(np.column_stack((aux,aux2,aux3,aux4)))
             aux6 = np.transpose(aux5)
             stage.ix[stage.index[i]] = aux6
-        #stage.ix[stage.index[0:long - hist], 4 * hist] = data.ix[data.index[hist:long], variable4]
-        stage.ix[stage.index[0:long - hist], variable4] = data.ix[data.index[hist:long], variable4]
+        stage.ix[stage.index[0:long - hist],variable4] = data.ix[data.index[hist:long], variable4]
         return stage
 
     def GroupingData1(data, period, timeColumn):

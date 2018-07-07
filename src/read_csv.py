@@ -3,12 +3,12 @@ from manager import CreateScenary
 
 ########################input parameters by user##########################
 print("Ingrese el intervalo de tiempo a evaluar")
-#interval=input()                    #period
-interval='10min'                  #period
+interval=input()                    #period
+interval='5min'                  #period
 
 print("Ingrese el numero de medidas hacia atras")
-#history=int(input())                #history
-history=10              #history
+history=int(input())                #history
+#history=5              #history
 
 print("Loading....")
 
