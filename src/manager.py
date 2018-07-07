@@ -12,7 +12,6 @@ class CreateScenary():
 
     def stage1(data, hist, variable):  # Build stage
         long = len(data.index)
-
         stage = pd.DataFrame(index=data.index[hist:long], columns=range(0, hist+1))
         a=list(stage)
         head=list()
